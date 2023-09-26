@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.container{
+    width: 100vw;
+}
+.container header{
+    display:  flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    
+}
+
+header .right ul{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+header .left ul{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+header .center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header .center h1{
+    align-items: center;
+    margin-top: -5px;
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 6px;
+}
+header ul a li{
+    font-size: 17px;       
+    font-family:sans-serif;
+    font-weight:500;
+    word-spacing: 4px;
+    margin: 0px 20px;
+    color: black;
+    
+}
+main{
+    width: 100vw;
+    overflow: hidden;
+}
+.section1 .top{
+    height: 40vh;
+    background-image: url(images/teechArangedHorizontallly.jpg);
+    background-size: cover;
+
+}
+.section1 .botom{
+    height: 80vh;
+    background-size: cover;
+    background-image:url(images/golden.jpg);
+    color: #fff;
+    padding: 70px 50px;
+    opacity: .9;
+}
+.section1 .botom .right{
+    width: 50%;
+
+}
+.section1 .botom .right h1{
+    width: 100%;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 55px;
+    word-spacing: 10px;
+    
+}
+.section1 .botom .right h3{
+    font-weight: 200;
+    margin: 50px 0;
+    font-weight: 400;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    
+}
+.section1 .botom .right .paragraph{
+    width: 60vw;
+    padding: 40px 30px;
+    background-color: rgb(174, 171, 143);
+}
+.section1 .botom .right .paragraph p{
+    font-size: 15px;
+    word-spacing: 5px;
+    line-height: 25px;
+    margin-top: 16px;
+    font-weight: 100;
+    font-family: Arial;
+    color: #fff;
+}
+.section2 .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section2 .box-container .box{
+    width: 400px;    
+    text-align: center;
+    height: 30vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.box-container .box h2{
+    font-size: 20px;
+    font-weight: 100;
+    
+}

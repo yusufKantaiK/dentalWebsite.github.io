@@ -1,0 +1,464 @@
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV*/
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    font-family:sans-serif;
+}
+.container{
+    width: 100%;  
+    height: fit-content;
+    
+}
+.container .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    width: 95%;
+    margin: 40px 2.5%;
+    align-items: center;
+    z-index: 100;
+   
+}
+.container .header h1{
+    font-size: 24px;
+    word-spacing: 2px;
+    letter-spacing: 4px;
+}
+.container .header .navigation ul{    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.container .header .navigation ul a{
+    text-decoration: none;
+    list-style: none;
+    color: black; 
+    flex-grow: 1;
+ 
+}
+.container .header .navigation ul a li{
+   
+}
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (max-width:1024px){  
+    .container .header{
+   
+      
+    } 
+    .container .header .navigation{
+        display: none;
+    }    
+}
+.container .header .navigation img{
+    display: none;
+}
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-width:1025px) {
+    .container{
+        margin: 0;
+    } 
+    .container .header{  
+        margin: 0px;
+        width: 100%;
+    } 
+    .container .header h1{
+        display:none
+        
+    }
+    .container .header .menu-bar{
+        display: none;
+    }    
+    .container .navigation{
+        /* background-color: red; */
+        width: 100%;
+        
+    }
+    .container .navigation ul{
+        padding: 40px 0px;
+      
+        width: 100%;
+    }
+    .container .navigation ul a li{
+        font-size: 18px;       
+        font-family:sans-serif;
+        font-weight: bold;
+        word-spacing: 4px;
+        margin-left: 15px;
+       
+       
+    }
+    .container .navigation ul a h2{
+        font-size: 26px;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        margin-top: -5px;
+    }
+    .container .navigation ul a button{
+        padding: 14px 40px;
+        border-radius: 40px;
+        outline: none;
+        border: none;
+        background-color: rgba(176, 166, 134, 0.741);
+        font-size: 19px;
+        font-weight: bold;
+        margin-top: -15px;
+    }
+
+}
+
+.container .body{
+
+}
+
+.clinicalCases{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin:50px 5%; 
+
+}
+.clinicalCases .left{
+    margin-top: 60px;
+ 
+}
+.clinicalCases .left h1{
+    text-align: center;
+    font-size: 40px;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+.clinicalCases .left h4{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    word-spacing: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+.clinicalCases .left p{
+    width: 100%;
+    text-align: justify;
+    font-weight: 100;
+    color: rgb(55, 53, 53);
+    font-size: 17px;
+    word-spacing: 1px;
+    line-height: 26px;
+    margin-top: 30px;
+}
+.clinicalCases .left .p1{
+    background-color:rgba(115, 103, 65, 0.741) ;
+    color: #fff;
+    padding: 40px 20px;
+    width: 100%;
+    margin-right: 20px;
+    
+}
+.clinicalCases .left .p2{
+    width: 95%;
+    margin-left: 2.5%;
+}
+.clinicalCases .right{
+    margin-top: 60px;
+}
+.clinicalCases .right form h1{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+.clinicalCases .right form input{
+    width: 96%;
+    margin-top: 15px;
+    height: 37px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid rgb(42, 41, 39) ;
+    font-size: 18px;
+}
+.clinicalCases .right form textarea{
+    margin-top: 10px;
+    width: 96%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid rgb(42, 41, 39) ;
+    font-size: 18px;
+}
+.clinicalCases .right form  .checkbox{
+    width: 12px;
+   
+    
+
+}
+.clinicalCases .right form .textbox-text{
+    margin-top: -30px;
+    margin-left: 14px;
+    width: 100%;
+    font-size: 16px;    
+}
+.clinicalCases .right form button{
+    padding: 19px 90px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: rgba(135, 125, 93, 0.741);
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+  
+
+}
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-width:1025px) {
+    .clinicalCases{
+        flex-direction: row;
+    }
+    .clinicalCases .left{
+        width: 70%;
+        margin-right: 5%;
+    }
+
+}
+
+/* deseases section */
+.body .deseases{
+    width: 90%;
+    background-color: rgb(230, 226, 226);
+    padding: 70px 5%;
+}
+.deseases h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.851);
+    margin-bottom: 60px;
+}
+.deseases h4{
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.deseases .serches{
+    display: flex;
+    flex-direction: column;
+}
+.serches select{
+    height: 50px;
+    margin-top: 15px;
+    border:  1px solid  rgba(135, 125, 93, 0.741);
+    outline: none;
+    color: black;
+    font-size: 18px;
+}
+
+.serches button{
+    margin-top: 15px;
+    height: 45px;
+    outline: none;
+    border:  1px solid #000;
+    border-radius: 30px;
+    font-size: 18px;
+    background: transparent;
+}
+.deseases button:focus{
+    border:  1px solid orange;
+    color: orange;
+
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-width:1025px) {
+    .deseases h3{
+        text-align: left;
+        font-size: 40px;
+        font-family: Arial;
+    }
+    .deseases h4{
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+    .deseases .serches{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .serches select{
+        width: 30%;
+        margin-left: 20pxs
+    }
+    .deseases button{
+        width: 15%;
+        margin-left: 10px;
+    }
+}
+.deseases .pictures{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.pictures .image{
+    margin: 40px 30px;
+    padding: 15px;
+    border-left: 1px solid gray;
+    background-color: rgba(200, 191, 192, 0.668);
+    width: 100%;
+    /* min-width: 250; */
+    max-width: 400px;
+}
+.image h2{
+    font-size: 22px;
+    padding: 20px 5px;
+}
+.image .pic{
+    color: #fff;
+    background-color: black;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.image .pic .img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pic .img .before{
+    height: 150px;
+    width: 50%;
+    background-color: green;
+    margin-right: 0.5%;
+    /* max-width: 170px; */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic .img .after{
+    height: 150px;
+    width: 50%;
+    margin-left: 0.5%;
+    background-color: red;
+    max-width: 200px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+}
+.pic ul li{
+    list-style: none;
+}
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (max-width:1024px){
+    .deseases .pictures{
+        width: 100%;       
+    }
+    .pictures .image{
+        width: 90%;
+        margin-left: 0px;
+    }
+
+}
+
+/* apointment section */
+.body .appointment{
+    width: 100%;
+    display: flex;
+    background-image: url(images/appointmed-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .7;
+    background-position: center center;
+    height: 90vh;
+}
+.appointment .right{
+    width: 70%;
+    margin-left: 60%;
+    margin-top: 60px;
+}
+
+
+.appointment .right h1{
+    width: 100%;
+    font-size: 18px;
+    
+}
+
+.appointment .right h2{
+    font-size: 18px;
+    margin-top: 40px;
+}
+.appointment .right button{
+    padding: 19px 90px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: rgb(135, 125, 93);
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 40px;
+    /* text-align: center; */
+    width: 80%;
+    color: #fff;
+}
+.appointment .right .btn{
+    width: 40%;
+    margin-top: 50px;
+    padding: 25px 0px;
+    font-weight: 100;
+    font-size: 17px;
+    border-radius: 20px;
+}
+.appointment .right .input{
+    margin-top: 40px;
+    padding: 15px;
+    outline: none;
+    border-radius: 30px;
+    width: 80%;
+    border: none;
+    color: #fff;
+    background-color: rgb(104, 100, 85);
+    margin-bottom: 20px;
+}
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (max-width:768px){
+    .body .appointment{
+        flex-direction: column;
+    }
+    .appointment .right{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 60px;
+        text-align: center;
+    }
+}
+
+/* whatsaap fixed icon */
+.container .whatsapp-fixed-icon{
+    position: fixed;
+    top: 90vh;
+    left: 80%;
+    height: 50px;
+    width:  50px;
+}
+
+
+

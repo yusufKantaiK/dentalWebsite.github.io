@@ -1,0 +1,1115 @@
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV*/
+
+/* 320px — 480px: Mobile devices*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+body .container{
+    width: 100%;
+    margin: 0;
+    padding: 0px;   
+    overflow: hidden;
+    
+}
+.container .header{
+    width: 100%;   
+    background-color: #fff;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;      
+}
+
+
+.container .header  h1{
+    font-size: 27px;
+    margin-top: -1px;
+    letter-spacing: 2px;
+    margin-left: 5px;
+
+}
+
+.container .header .menu-bar img{
+    height: 30px;
+    width: 40px;
+    margin-right: 5px;
+}
+.container .header .navigation{
+    position: absolute;
+    background-color:#fff;
+    top: 0;
+    width: 100%;
+    display: block;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    transition: 1s ease;
+}
+.container .header .navigation img{
+    margin-left: 90%;
+    color: black;
+    height: 30px;
+    padding-top: 0px;
+    width: 30px;
+    margin-top: -30px;
+    position: fixed;
+}
+.container .header .navigation a{
+    text-decoration: none;
+    color: black;
+}
+.container .header .navigation a h1{
+    width: 100%;
+    font-size: 30px;
+    word-spacing: 5px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 50px;
+}
+.container .header .navigation ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+      
+}
+/* 481px — 768px: iPads, Tablets */
+@media screen and (max-width: 1024px) {
+    .container .header .navigation ul{
+        margin-top: 20px;
+        text-align: center;
+    }   
+    .container .header .navigation ul a{
+        text-decoration: none;
+        color:#000;
+    } 
+    .container .header .navigation ul a h2{
+        display: none;
+    }
+    .container .header .navigation ul a li{
+        font-size: 22px;
+        font-weight: 100;
+        margin-top: 40px;
+
+    }
+
+    .container .header .navigation ul button{
+        background-color: rgb(188, 180, 154);  
+        border: none;
+        padding: 35px;
+        margin-top: 50px;
+        font-size: 17px;
+        border-radius: 30px;
+    }
+    
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-width:1025px){
+    
+    .container .header .menu-bar img{
+        display: none;
+    }
+    .container .header h1{
+        display: none;
+    }
+    .container .header .navigation a h1{
+        display: none;
+    }
+    .container .header .navigation { 
+        display: block;
+        display: flex;
+        flex-direction: column;    
+        margin: none;
+        justify-content:space-between;   
+        height: fit-content;
+        padding: 20px 0px;
+        position: relative;
+    }
+    .container .header .navigation img{
+        display: none;
+    }
+    .container .header .navigation ul{
+        display: flex;
+        flex-direction: row;     
+        justify-content:space-evenly ;
+       
+    }
+    .container .header .navigation ul a h2{
+        display: block;
+        font-weight: 100;
+        word-spacing: 1px;
+        letter-spacing: 2px;
+        font-size: 24px;
+        padding:5px;
+    }
+    .container .header .navigation ul a li{
+        list-style: none;
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight:bold;
+        text-decoration:bold ;
+        color: #000;
+        padding:10px 0px;
+        transition: .21s ease;
+        padding-bottom: 0px;
+        
+        
+    }
+
+    .container .header .navigation ul a button{
+        text-align: center;       
+        padding:10px 20px;
+       
+        font-size: 19px;
+        border-radius: 20px;
+        border: none;    
+        background-color: rgb(188, 180, 154);
+        
+    }
+
+}
+.container .header .navigation ul a li:hover, .container .header .navigation ul a li:focus{
+    border-bottom: 2px solid orangered;
+}
+
+/* body sections */
+.container .body{
+    width: 100%;
+   
+}
+.container .body .whatsappicon{
+    position: absolute;
+    height: 70px;
+    top:90vh;
+    right: 10px;
+    position: fixed;
+}
+.container .body .bg{   
+    text-align: center;
+    justify-content:center;
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    background-image: url(images/smillinggirl.jpg);
+    background-position: center top; 
+    height: 75vh;
+}
+.container .body .bg .left{
+    color: #ede8e8;
+    margin-top: 50px;
+    font-weight: 200;
+
+
+}
+.container .body .bg .left h2{
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-weight: 100;
+}
+.container .body .bg .left h5{
+    font-size: 15px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-weight: 100;
+    text-align: end;
+    margin-top: 6px;
+    margin-right:20px;
+
+}
+
+.container .body .bg .right{
+    background-color: rgb(124, 114, 78);    
+    padding: 30px 0;   
+    justify-content: center;
+}
+.container .body .bg .right p{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 35px;
+    font-family: cursive;
+    text-align: left;
+    width: 96%;
+    margin-left: 2%;
+}
+
+
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-width:768px){  
+    .container .body .bg{
+        flex-direction:row;     
+
+    }
+    .container .body .bg .right{          
+        margin-top: 50px;      
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-top: 33vh;
+        height: 20vh;       
+        
+    }
+    .container .body .bg .right p{
+        padding-left: 20px;
+        padding-right: 1%;
+        line-height: 38pxs;
+    } 
+    .container .body .bg .left{
+        height: 20vh;
+        margin-top: 20vh;
+        width: 50%;
+        font-size: 19px;
+       
+    }  
+    .container .body .bg .left h2{
+        margin-top: 50px;
+    } 
+}
+/* section two */
+.container .body .two{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+.container .body .two .left{
+    width: 96%;
+    background-color: #fff;
+    margin-left: 3%;
+    margin-top: 50px;    
+}
+.container .body .two .left h3{
+    font-weight: 300;
+    width: 70%;
+    text-align: center;
+    margin-left: 10%;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 17px;
+    word-spacing: 5px;
+        
+}
+.container .body .two .left h2{
+    margin:20px 0;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    color: rgb(51, 50, 50);
+
+}
+.container .body .two .left p{
+    width: 94%;
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 25px;
+    text-align: justify;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: 50;
+    color: rgba(0, 0, 0, 0.913);
+}
+.container .body .two .left a button{
+    text-align: center;
+    margin-top: 30px;
+    padding:30px 20px;
+    margin-left: 30%;
+    font-size: 19px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(188, 180, 154);
+    color: #fff;
+
+}
+.container .body .two .right{  
+    background-image: url(/images/beatufullivingroom.jpg);
+    background-position: center bottom; 
+    height: 50vh;
+}
+
+
+  
+
+@media screen and (min-width:768px){  
+    .container .body .two{
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-between;              
+    }
+    .container .body .two .left{
+        width: 50%;
+        margin-left: 0;   
+    }
+    .container .body .two .left h3{
+        text-align: left;
+        width: 100%;
+        margin-left: 6%;
+        font-size: 21px;
+    }
+    .container .body .two .left h2{
+        font-size: 35px;
+        width: 60%;
+        text-align: left;        
+        color: rgb(41, 41, 41);
+        line-height: 50px;
+        margin-top: 30pxs;
+        margin-left: 5%;
+
+    }
+    .container .body .two .left p{        
+        margin-left: 6%;
+        width: 90%;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 50px;
+
+        
+    }
+    .container .body .two .left a button{
+        width: 40%;
+        font-size: 25px;
+        margin-left: 10%;
+        margin-top: 80px;
+        margin-bottom: 30px
+    }
+    .container .body .two .right{
+        width: 50%;
+        height: 100vh;        
+        background-size: cover; 
+        background-position: center bottom;    
+      
+    }
+}
+
+/* section three */
+.container .body .three{
+    width: 100%;
+    /* margin-top: 70px; */
+    background-color: rgba(195, 207, 189, 0.795);
+}
+.container .body .three h2{
+    width: 55%;
+    text-align: left;
+    margin-left: 20%;
+    padding: 50px 0;
+    font-weight: 100;
+    font-size: 27px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: #150e0ee2;    
+}
+.container .body .three .teeths{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+.container .body .three .teeths .container{
+    width: 100%;
+    text-align: center;
+}
+.container .body .three .teeths .container h3{
+    font-size: 15px;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.container .body .three .teeths .container p{
+    font-size: 17px;
+    width: 90%;
+    line-height: 20px;
+    color:rgba(0, 0, 0, 0.872);
+    margin: 30px 0px;
+    margin-left: 5%;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.container .body .three .teeths .container .img{
+    height: 25vh;
+    background-position: center center;
+    width: 100%;
+    margin: 20px 0px;
+    
+}
+.container .body .three .container #teeth1{
+    background-image: url(images/cleaningteeth.jpg);
+    width: 100%;
+}
+.container .body .three .container #teeth2{
+    background-image: url(images/whiteteeth.jpg);
+    background-position: center center;
+    /* height: 40vh; */
+}
+.container .body .three .container #teeth3{
+    background-image: url(images/invisalyn.jpg);
+    background-position: center center ;
+    /* height: 40vh; */
+    width: 100%;
+}
+.container .body .three .teeths .container h6 u{
+    font-size: 18px;
+    font-weight: 300;   
+    margin-top: 300px;
+}
+
+@media screen and (min-width:768px){  
+    .container .body .three h2{
+        width: 90%;
+        font-size: 35px;
+        text-align: left;
+        margin-left: 5%;
+        padding: 70px 0;
+        padding-bottom: 30px;
+    }
+    .container .body .three .teeths{
+        flex-direction: row;
+        justify-content: space-between;
+        margin:0 10px;
+    }
+    .container .body .three .teeths .container{
+        margin-right: 15px;
+    }
+    .container .body .three .teeths .container .img{
+        height:40vh;
+    }
+    .container .body .three .teeths .container .img{
+        height: 13vh;
+    }
+    .container .body .three .teeths .container p{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 35px;
+    }
+    .container .body .three .teeths .container h3{
+        font-size: 16px;
+        width: 100%;
+       line-height: 20px;
+    }
+}
+.container .body .three .whyus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+.container .body .three .whyus .left{
+    width: 100%
+}
+.container .body .three .whyus .left .img{
+    height: 100%;
+    background-image: url(images/maledoc.jpg);
+    background-position: center top;
+
+}
+.container .body .three .whyus .right{
+    margin-top: 40px;
+}
+.container .body .three .whyus .right h5{
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.container .body .three .whyus .right h2{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    line-height: 25px;
+    width: 70%;
+}
+.container .body .three .whyus .right p{
+    font-size: 16px;
+    width: 90%;
+    line-height: 20px;
+    color:rgba(0, 0, 0, 0.872);
+    margin-left: 5%;
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 22px;
+
+}
+.container .body .three .whyus .right a button{
+    margin-top: 50px;
+    padding:25px 15px;
+    border-radius: 20px;
+    border:none;
+    font-size: 19px;
+    background-color: rgb(188, 180, 154);  
+    color: white;
+    margin-bottom: 70px;
+   
+}
+@media screen and (min-width:768px){
+    .container .body .three .whyus{
+        flex-direction: row;        
+        margin-top: 100px;       
+    }
+    .container .body .three .whyus .left{
+        width: 50%;     
+        background-color:blue ;  
+    }
+    .container .body .three .whyus .left .img{
+        height: 90vh;
+        background-size: cover;
+        background-position: center top;
+        height:87vh;
+        
+    }
+    .container .body .three .whyus .right{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+}
+
+.container .body .diseses{
+    background-color: rgba(48, 48, 58, 0.941);
+    text-align: center;  
+    width: 100%;
+}
+.container .body .diseses h2{
+    padding-top: 40px;
+    font-weight: 100;
+    color: white;
+    font-size: 29px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.container .body .diseses .left{
+    margin-left: 5%;
+    border-left: 1px solid rgba(220, 220, 220, 0.288);
+}
+.container .body .diseses .left h5{
+    font-size: 22px;
+    margin-top: 60px;
+    color:white;
+    font-weight: 100;
+    width: 60%;
+    margin-left: 20%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 27px;
+
+}
+.container .body .diseses .left .image-container{
+    height: 15vh;
+    width: 90%; 
+    background-color: black;
+    margin-left: 5%;
+}
+.container .body .diseses .left .image-container .images{
+    margin-top: 30px;
+    display: flex;   
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+}
+.container .body .diseses .left .image-container .images .image{    
+    width: 90%;  
+    background-size: cover;
+  
+
+   
+}
+.container .body .diseses .left .image-container .images #notclean{
+    background-image: url(images/notcleanteeth.jpg);
+    margin-right: 10px;
+    background-position: center center;
+
+}
+.container .body .diseses .left .image-container .images #clean{
+    background-image: url(images/cleanteeth.jpg);
+    background-position: center bottom;
+}
+.container .body .diseses .left .image-container h2 ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: -30px;
+    padding: 0 5px;
+}
+.container .body .diseses .left .image-container h2 ul li{
+    font-size: 11px;
+}
+.container .body .diseses .left h6{
+    margin-top: 30px;
+    font-size: 17px;
+    color: white;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 5%;
+}
+
+/* desease section radios style */
+.container .body .diseses .radios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;  
+    width: 90%;    
+    margin-left:5%;   
+    margin-top: 50px;
+    padding:0 10%;
+    padding-bottom: 80px;
+}
+.container .body .diseses .radios input{
+   margin-right: 50px;
+   margin-top: 50px; 
+   height: 25px;
+   width: 20px;   
+   outline: none;
+   
+
+  
+}
+.container .body .diseses .right{
+    display: none;
+
+} 
+.container .body hr{    
+    border: 0.01px solid gray;
+    margin-left: 7%;
+    margin-top: 30px;
+    margin-right: 3%;
+
+}
+@media screen and (min-width:768px){
+    .container .body .diseses .radios{
+        width: 37%;
+        text-align: center;
+        margin-left: 30%;
+        padding-bottom: 50px;
+        margin-top: 10px;
+    }
+
+}
+
+/* appointments sections */
+.container .body .apointment{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: url(images/appointmed-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100vh;
+   
+}
+.container .body .apointment .right h2{
+    margin-top: 90px;
+    font-weight: 100;
+    font-size: 22px;
+    text-align: center;
+}
+.container .body .apointment .right h3{
+    margin-top: 40px;
+    font-weight: 100;
+    font-size: 25px;
+    word-spacing: 1px;
+}
+.container .body .apointment .right a button{
+    padding: 25px 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(157, 152, 135); 
+    color: white;
+}
+.container .body .apointment .right .input{
+    margin-top: 40px;
+    width: 80%;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(157, 152, 135);
+    padding: 5px;
+    font-size: 16px; 
+    padding-left: 15px;
+    outline: none;
+}
+.container .body .apointment .right .checkbox{
+    margin-top: 40px;
+    padding: 10px;
+    margin-right: 3px;
+}
+.container .body .apointment .right span{
+    font-size: 17px;
+}
+.container .body .apointment .right .callusbutton{
+    width: 90%;
+    padding: 19px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+@media screen and (min-width:768px){
+    .container .body .apointment{
+        flex-direction: row;      
+    }
+    .container .body .apointment .right{
+        margin-left: 50%;
+        justify-content: left;
+        text-align: left;
+        width: 100%;
+        margin-right: 20px;
+    }
+    
+
+}
+
+/* section pictures */
+.container .body .pictures{
+    margin-top: 200px;
+    text-align: center;
+}
+.container .body .pictures h2{
+    font-weight: 100;
+    font-size: 27px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-family: sans-serif;
+    width: 70%;
+    text-align:centers;
+    margin-left:15%;
+    color: rgba(10, 10, 10, 0.963);
+}
+.container .body .pictures .instergram{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container .body .pictures .instergram img{
+    height: 40px;
+    width: 40px;
+    margin-left: 45%;
+    margin-top: 70px;
+}
+.container .body .pictures .instergram h3{
+    color: orange;
+    font-weight: 100;
+    margin-top: 10px;
+
+}
+.container .body .pictures .images{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+    justify-content: space-around;  
+    margin-bottom: 10px;
+}
+.container .body .pictures .images .container{
+    height: 20vh;
+    width: 32%;
+    background-color: red;
+    margin-top: 5px;
+    justify-content:flex-end;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center center;
+
+    
+}
+.container .body .pictures .images #ba1{
+    background-image: url(images/afterckeaning1.jpg);
+}
+.container .body .pictures .images #ba2{
+    background-image: url(images/beforecleaning1.jpg);
+}
+.container .body .pictures .images #ba3{
+    background-image: url(images/afterckeaning2.jpg);
+}
+.container .body .pictures .images #ba4{
+    background-image: url(images/beforecleaning2.jpg);
+}
+.container .body .pictures .images #ba5{
+    background-image: url(images/beforecleaning3.jpg);
+}
+.container .body .pictures .images #ba6{
+    background-image: url(images/afterckeaning3.jpg);
+}
+.container .body .pictures .images #ba7{
+    background-image: url(images/beforecleaning3.jpg);
+}
+.container .body .pictures .images #ba8{
+    background-image: url(images/afterckeaning4.jpg);
+}
+.container .body .pictures .images #ba9{
+    background-image: url(images/afterckeaning6.jpg);
+}
+.container .body .pictures .images .container h3{
+    font-weight: 100;
+    font-size: 12px;
+}
+.container .body .pictures a .loadbtn{
+    padding: 13px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    color:rgba(0, 0, 255, 0.612);
+    background-color: rgba(124, 180, 244, 0.505);
+
+}
+.container .body .pictures a .followbtn{
+    margin-top:70px ;
+    padding: 25px 20px;  
+    border-radius: 20px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background-color: rgb(157, 152, 135); 
+    color: white;
+}
+
+/* footer section */
+.container .body .footer{
+    background-color: rgb(1, 1, 13);
+    margin-top: 80px;
+    padding-right: 2%;   
+
+}
+.container .body .footer .top{
+    width: 100%;
+    margin-left: 1%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.667);
+    cursor: pointer;
+}
+.container .body .footer .top h1{
+    text-align: center;
+    padding: 50px;
+    font-size: 70px;
+    font-family:cursive;
+    color: white;
+    font-weight: 100;
+}
+.container .body .footer .handles{
+    width: 100%;
+    text-align: center;
+    padding-bottom:20px ;
+    
+}
+.container .body .footer .handles img{
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+
+}
+.container .body .footer .divs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 3%;
+}
+.container .body .footer .divs .div1{
+    width: 98%;
+    margin-left: 1%;
+    color: white;  
+    margin-top: 60px;
+}
+.container .body .footer .divs .div1 p{
+    margin-top: 1px;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 25px; 
+    letter-spacing: 1px;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.container .body .footer .divs .div1 .h{
+    margin-top: 50px;
+}
+.container .body .footer .divs .div1 h1{
+    font-size: 16px;
+    padding: 0;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.container .body .footer .divs .div1 h3{
+    font-weight: 400;
+    margin-top: 40px;
+    font-size: 15px;  
+    text-align: left;
+    margin-left: 10px;
+
+}
+.container .body .footer .divs .div1 h2{
+    margin-top: 50px;
+    font-size: 19px;
+    margin-left: 10px;
+    font-weight: 400;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+
+}
+.container .body .footer .divs .div1 .input{
+    margin-top: 40px;
+    width: 90%;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(157, 152, 135);
+    padding: 5px;
+    font-size: 16px; 
+    padding-left: 15px;
+    outline: none;
+    margin-left: 1%;
+}
+.container .body .footer .divs .div1 .checkbox{
+    margin-top: 40px;
+    padding: 10px;
+    margin-right: 3px;
+}
+.container .body .footer .divs .div1 span{
+    font-size: 17px;
+}
+.container .body .footer .divs .div1 .callusbutton{
+    width: 90%;
+    padding: 13px;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 3%;
+    outline: none;
+    border: none;
+}
+.container .body .footer .divs .div2{
+   
+    margin-top: 30px;
+
+}
+.container .body .footer .divs .div2 h1{
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: left;
+    margin-top: 30px;
+    font-weight: 100;
+    padding: 0;
+    letter-spacing: 6px;
+    word-spacing: 1px;
+}
+.container .body .footer .divs .div2 p{
+    color: #a9a4a4;
+    margin-top: 30px;
+    line-height: 25px;
+    font-size: 16px;
+}
+.container .body .footer .divs .div2 .img{
+    /* background-image: url(images/kerokaimage.jpg); */
+    width: 95%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    margin-top: 40px;
+}
+.container .body .footer .divs .div2 .img iframe{
+    width: 500px;
+    height: 35vh;
+    background-repeat: no-repeat;
+}
+
+.container .body .footer .divs .div3{
+    margin-top: 60px;
+    color: white;
+    }
+.container .body .footer .divs .div3 h2{
+    font-weight: 100;
+    font-size: 19px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+}
+.container .body .footer .divs .div3 p{
+    margin-top: 30px;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    color: rgb(153, 146, 146);
+
+}
+.container .body .footer .divs .div4{
+    color: white;
+    margin-top: 30px;
+}
+.container .body .footer .divs .div4 h2{
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    margin-bottom: 20px;
+}
+.container .body .footer .divs .div4 p{
+    margin-top: 5px;
+    font-weight: 100;
+    width: 100%;
+    color: #a09a9a;
+}
+.container .body .footer .divs .div4 .p{
+    text-align: center;
+    font-size: 17px;
+}
+.container .body .divs .div4 a{
+    text-decoration: none;
+}
+.container .body .footer .divs .div4 a h6{
+    font-size: 14px;
+    color: #a09a9a;
+    font-weight: 800;    
+}
+.container .body .footer .divs .div4 a button{
+    padding: 30px 25px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;   
+    margin-left:30%; 
+    background-color: #a9a4a4;
+    margin-top: 50px;
+    color: #000000;
+}
+.container .body .footer .list{ 
+    margin-right: 10%;
+    margin-top: 20px;
+    padding-bottom:  40px;
+}
+.container .body .footer .list ul{
+    display: flex;    
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.container .body .footer .list ul a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    color: #a09a9a;
+}
+.container .body .footer .list ul a li{
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 18px;
+}
+.container .body .picture{
+    padding: 50px 20px;
+}
+
+
+
+
